@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% block title %}
+  Home
+{% endblock %}
+
+{% block body %}
+  <!-- Image Carousel -->
+  <div class="container-fluid px-0">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/static/images/Momo_nepal.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h4 style=" font-family:Georgia, 'Times New Roman', Times, serif">Welcome to Dumb Dumplings</h4>
+            <p style="color:wheat;">Savor the Flavor: Unleash the Taste of Authentic Momo.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/static/images/momo.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="/static/images/momo1.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="head mt-5">
+    <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif; color:rgb(24, 63, 77);" class="fw-normal">Popular Choice</h2>
+  </div>
+
+  <div class="container marketing mt-5">
+    <!-- Popular Choice -->
+    <div class="row">
+      <!-- Image one -->
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-center">
+          <div>
+            <svg class="bd-placeholder-img rounded-circle" width="200" height="200" src="/static/images/momo.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <image href="/static/images/c-momo.jpeg" width="100%" height="100%" />
+            </svg>
+          </div>
+        </div>
+        <h2 style="text-align: center;" class="fw-normal">Chilly Momo</h2>
+        <p style="text-align: center;">Each bite is a harmonious blend of textures and flavors, making Chilli Momos a beloved treat for those seeking a delightful fusion of warmth and zing in every bite.</p>
+        <div class="text-center">
+          <p>
+            <a class="btn btn-secondary" href="/menu">Menu »</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Image two -->
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-center">
+          <div>
+            <svg class="bd-placeholder-img rounded-circle" width="200" height="200" src="/static/images/momo.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <image href="/static/images/friedmomo.jpeg" width="100%" height="100%" />
+            </svg>
+          </div>
+        </div>
+        <h2 style="text-align: center;" class="fw-normal">Fried Momo</h2>
+        <p style="text-align: center;">Fried momos are delectable contrast between the crispiness of the outer layer and the tender, juicy goodness within. Enjoy the best of both crispy and savory worlds.</p>
+        <div class="text-center">
+          <p>
+            <a class="btn btn-secondary" href="/menu">Menu »</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Image three -->
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-center">
+          <div>
+            <svg class="bd-placeholder-img rounded-circle" width="200" height="200" src="/static/images/momo.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <image href="/static/images/steamedmomo.jpg" width="100%" height="100%" />
+            </svg>
+          </div>
+        </div>
+        <h2 style="text-align: center;" class="fw-normal">Steamed Momo</h2>
+        <p style="text-align: center;">A popular choice for those seeking a healthier yet equally satisfying alternative. Enjoy the simplicity and purity of Steamed Momos, where the essence of the filling shines through in every bite.</p>
+        <div class="text-center">
+          <p>
+            <a class="btn btn-secondary" href="/menu">Menu »</a>
+          </p>
+        </div>
+      </div>
+      <!-- row close -->
+    </div>
+
+    <!-- Ambiance -->
+
+    <div class="row featurette">
+      <h2 style="text-align: center; font-family: 'Lucida Handwriting Std', sans-serif; color:rgb(24, 63, 77); font-size: 50px;" class="fw-normal my-5">Restaurant Ambience</h2>
+      <hr class="featurette-divider" />
+
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary" style="font-family: 'Times New Roman', Times, serif;">Embark on a Soiree of Serenity.</span></h2> <br />
+        <p class="lead">Step into our luxurious lounge, where comfort meets sophistication. Sink into plush seating as ambient lighting sets the mood. Whether you're enjoying a crafted cocktail or engaging in lively conversation, our lounge is the epitome of relaxation and style.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="/static/images/lounge.jpg" width="100%" height="100%" />
+        </svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary" style="font-family: 'Times New Roman', Times, serif;">Dine Under the Canopy of Nature's Symphony</span></h2> <br />
+        <p class="lead">Escape the ordinary and dine al fresco in our enchanting outdoor space. Surrounded by lush greenery and bathed in natural light, this is the perfect setting to savor delectable dishes while basking in the open air. Revel in the harmony of nature and gastronomy.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="/static/images/outdoor.jpg" width="100%" height="100%" />
+        </svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary" style="font-family: 'Times New Roman', Times, serif;">Culinary Alchemy Unveiled</span></h2> <br />
+        <p class="lead">Witness the heart of our culinary excellence at our open kitchen. The sizzle, the aroma, and the meticulous craftsmanship – experience it all as our chefs bring your dining experience to life. Transparency meets gastronomy, ensuring a feast for your senses.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="border-radius:20px;">
+          <image href="/static/images/kitchen.jpg" width="100%" height="100%" />
+        </svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary" style="font-family: 'Times New Roman', Times, serif;">Where Artistry Meets Appetite</span></h2> <br />
+        <p class="lead">Immerse yourself in an aesthetic journey as our carefully curated decor transports you to a realm of artistic elegance. From modern minimalist designs to classic charm, every corner tells a story. Our commitment to aesthetics extends to every detail, creating an ambiance that is as visually pleasing as it is inviting..</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="border-radius:20px;">
+          <image href="/static/images/decor.jpg" width="100%" height="100%" />
+        </svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary" style="font-family: 'Times New Roman', Times, serif;">A Symphony of Service, Tailored for You.</span></h2> <br />
+        <p class="lead">At the core of our dining experience is a commitment to unparalleled service. Our attentive staff is dedicated to elevating your visit, anticipating your needs, and ensuring every moment is seamless. From recommendations to personalized care, we pride ourselves on delivering a service that exceeds expectations..</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="border-radius:20px;">
+          <image href="/static/images/qualityservice.jpg" width="100%" height="100%" />
+        </svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+    <!-- /END THE Ambience -->
+  </div>
+{% endblock %}
