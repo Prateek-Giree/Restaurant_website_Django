@@ -1,0 +1,115 @@
+/* Styling for menu page */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&family=Noto+Serif:wght@100&display=swap");
+
+
+.main {
+  width: 100%;
+  margin: 100px auto;
+  font-family: "Noto Serif", serif;
+  
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: #40128B;
+}
+
+.sectionTitle h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #FF55BB;
+}
+
+.sectionTitle h2:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: pink;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menuCol {
+  width: 40%;
+  margin-left: 90px;
+}
+
+.menuCol h4 {
+  letter-spacing: 1px;
+  color: #2E8A99;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px;
+}
+
+.menuCol h4:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: pink;
+  bottom: 0;
+}
+.singleMenu img {
+  border-radius: 40px;
+  border: 1px dashed black;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.singleMenu {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.singleMenu .menucontent h5 {
+  font-size: 20px;
+  /* border-bottom: 1px dashed #222; */
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.singleMenu .menucontent h5 span {
+  margin-left: 10px;
+  color: tomato;
+  font-weight: 600;
+  font-style: italic;
+}
+hr.with-margin {
+  margin: 100px;
+}
+
+/*make image enlarged when clicked*/
+.enlargeable {
+  transition: width 0.3s ease-in-out;
+}
+
+.enlarged {
+  width: 300px;
+}
