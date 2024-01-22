@@ -4,6 +4,58 @@
   box-sizing: border-box;
 }
 
+/*Styling for hero section*/
+@import url("https://fonts.googleapis.com/css2?family=Charm&family=Italianno&display=swap");
+
+.hero {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(5, 28, 30, 0.908)),
+    url(/static/images/dumpling.jpg) no-repeat center center/cover;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+}
+.hero .info h1 {
+  margin-bottom: 1rem;
+  font-family: Papyrus, fantasy;
+  font-weight: 600;
+  font-size: 3em;
+  color: #f3ccf3;
+  text-shadow: 2px 2px 2px rgb(9, 66, 96);
+}
+.hero .info p {
+  margin-bottom: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #8ddfcb;
+  font-weight: 400;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px rgb(154, 174, 185);
+}
+.button {
+  padding: 10px 20px;
+  background-color: rgb(8, 52, 56);
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 2px 2px rgb(9, 66, 96);
+}
+.button:hover {
+  color: #f8f4ec;
+  background-color: rgb(15, 163, 163);
+  transition: 0.3s;
+}
+/*Styling for hero section, end*/
+
+/*Styling for footer*/
 footer {
   background-color: rgb(8, 52, 56);
   background: linear-gradient(to bottom, rgb(8, 52, 56), rgb(0, 128, 128));
@@ -87,3 +139,4 @@ footer {
     margin: 10px;
   }
 }
+/*Styling for footer, end*/
