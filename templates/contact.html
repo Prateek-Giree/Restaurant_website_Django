@@ -1,7 +1,69 @@
-{% extends "base.html" %}
-{% block title %}Contact us {% endblock title %}
+{% extends 'base.html' %}
+{% block title %}
+  Contact us
+{% endblock %}
 
 {% block body %}
-<b>This is contact us page</b>
-{% endblock body %}
- 
+  <section class="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>We're here to assist you. Please feel free to get in touch with us using the following contact methods.</p>
+    </div>
+    <div class="Container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>
+              Khairahani-08, Parsa <br />Chitwan
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>9800000000</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:dumbdumplings.info@gmail.com">dumbdumplings.info@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contactForm">
+        <form action="/contact/" method="post">
+          {% csrf_token %}
+          <h2>Send Message</h2>
+          <div class="inputBox">
+            <input type="text" name="name" id="name" required="required" />
+            <span>Full Name</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" name="email" id="email" required="required" />
+            <span>Email</span>
+          </div>
+          <div class="inputBox">
+            <textarea required="required" id="message" name="message"></textarea>
+            <span>Type your Message...</span>
+          </div>
+          <div class="inputBox">
+            <input type="submit" name="" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+{% endblock %}
