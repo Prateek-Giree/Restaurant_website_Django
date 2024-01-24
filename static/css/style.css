@@ -301,3 +301,128 @@ footer {
 }
 
 /*Styling for contact us page, end*/
+
+/* Styling for about us page  */
+.heading {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+.heading h1 {
+  font-size: 50px;
+  color: #0a676f;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+.heading h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  align-self: center;
+  height: 4px;
+  width: 100%;
+  margin: 0 auto;
+  background: pink;
+  border-radius: 5px;
+}
+.heading p {
+  font-size: 18px;
+  color: tomato;
+  margin-bottom: 35px;
+}
+.heading p span {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #0e9cb1;
+  font-size: 25px;
+  font-weight: 600;
+}
+.contain {
+  width: 90%;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutImg {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.aboutImg img {
+  min-width: 400px;
+  height: 400px;
+  display: block;
+  transition: 0.5s ease;
+}
+.aboutImg:hover img {
+  transform: scale(1.1);
+}
+.about .aboutText {
+  flex: 1;
+}
+.aboutText h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #085662;
+}
+.aboutText .readMore {
+  display: inline-block;
+  padding: 10px 20px;
+  color: pink;
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  background: #085662;
+  transition: 0.3s ease;
+}
+.aboutText .readMore:hover {
+  color: #fff;
+  background-color: #16a6c3;
+}
+.line {
+  margin: 40px 80px 40px 80px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 80px;
+}
+.description .desc {
+  width: 60%;
+}
+.description .desc h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #085662;
+}
+.description .iconlist {
+  width: 30%;
+}
+.iconlist h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #085662;
+}
+.icons a {
+  font-size: 20px;
+}
+.icons span {
+  margin-left: 1rem;
+}
+/* Styling for about us page , end */

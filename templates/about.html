@@ -1,7 +1,41 @@
-{% extends "base.html" %}
-{% block title %}About us{% endblock title %}
+{% extends 'base.html' %}
+{% block title %}
+  About us
+{% endblock %}
 
 {% block body %}
-<b>This is  about us page</b>
-{% endblock body %}
-  
+  <div class="heading">
+    <h1>About us</h1>
+    <p>
+      <span>Dumb Dumplings:</span> A destination for food enthusiasts.
+    </p>
+  </div>
+  <div class="contain">
+    <section class="about">
+      <div class="aboutImg">
+        <img src="/static/images/about.avif" alt="" />
+      </div>
+      <div class="aboutText">
+        <h2>Our Story</h2>
+        <p>At Dumb Dumplings, our story is woven with a rich tapestry of culinary experiences. It all began with a simple dream – to create a haven for food lovers, where each bite tells a unique tale of tradition, innovation, and passion. Our journey started in the heart of Parsa, where we set out to redefine the dining experience.</p>
+        <a href="#culinary" class="readMore">Read More</a>
+      </div>
+    </section>
+  </div>
+  <hr class="line" />
+  <section class="description" id="culinary">
+    <div class="desc">
+      <h2>Join Us on this Culinary Odyssey</h2>
+      <p>Dumb Dumplings is more than just a restaurant; it's an invitation to embark on a culinary odyssey. Whether you're a seasoned foodie or exploring new flavors, we invite you to join us on this journey of taste and discovery. Come, savor the moments, create memories, and let the flavors of Dumb Dumplings linger on your palate.</p>
+    </div>
+
+    <div class="iconlist">
+      <h2>Follow us on</h2>
+      <div class="icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"><span>Facebook</span></i></a> <br />
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"><span>Instagram</span></i></a> <br />
+        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"><span>Twitter</span></i></a>
+      </div>
+    </div>
+  </section>
+{% endblock %}
